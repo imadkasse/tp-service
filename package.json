@@ -1,0 +1,17 @@
+{
+  "name": "tp-sweb",
+  "version": "1.0.0",
+  "description": "tp-sweb",
+  "main": "rest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:rest": "nodemon rest.js",
+    "start:soap": "nodemon soap.js"
+  },
+  "author": "Imad-kasse",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "soap": "^1.1.7"
+  }
+}
