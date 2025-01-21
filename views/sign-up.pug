@@ -1,0 +1,65 @@
+doctype html
+html
+    head
+        title صفحة التسجيل
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        style.
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f9f9f9;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            .form-container {
+                background: #ffffff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                max-width: 400px;
+            }
+            h1 {
+                font-size: 1.5em;
+                margin-bottom: 20px;
+                text-align: center;
+                color: #333;
+            }
+            label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            input {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                font-size: 1em;
+            }
+            button {
+                width: 100%;
+                padding: 10px;
+                background-color: #4CAF50;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                font-size: 1em;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #45a049;
+            }
+    body
+        div.form-container
+            h1 تسجيل حساب جديد
+            form(action="/sign-up" method="POST")
+                label(for="username") اسم المستخدم
+                input(type="text" name="username" id="username" placeholder="أدخل اسم المستخدم" required)
+                label(for="email") البريد الإلكتروني
+                input(type="email" name="email" id="email" placeholder="أدخل البريد الإلكتروني" required)
+                button(type="submit") تسجيل
